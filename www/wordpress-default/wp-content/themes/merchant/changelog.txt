@@ -1,0 +1,156 @@
+*** Merchant Changelog ***
+
+2013.08.30 - version 1.3.5
+ * includes/theme-actions.php - Ensures specific font colour settings override the general link colour.
+ * includes/theme-woocommerce.php - Make WooCommerce style disabling 2.1 compatible
+
+2013.05.24 - version 1.3.4
+ * Minor version bump to re-build.
+
+2013.04.10 - version 1.3.3
+ * loop-portfolio.php - Fixed when a portfolio item had a custom URL entered, only the image (not the title) linked to the custom URL.
+
+2013.04.04 - version 1.3.2
+ * includes/homepage-content-panel.php - Homepage content area now displays the full content of the page
+
+2013.03.13 - version 1.3.1
+ * /includes/theme-woocommerce.php - Adjusts pagination on WooCommerce screens for WooCommerce 2.0 compatibility.
+ * /css/woocommerce.css - Adjusts pagination styling on WooCommerce screens and adjust the incrementors on HTML5 "number" inputs.
+
+2013.03.05 - version 1.3.0
+ * /css/layout.css - updates flexslider layout styles
+ * /includes/homepage-slider-panel.php - fixes autoheight bug for slides transitions
+ * /includes/theme-js.php - updates flexslider version
+ * /includes/js/jquery.flexslider-min.js - updates from 1.8 to 2.1
+ * style.css - updates flexslider styles
+
+2013.02.26 - version 1.2.5
+ * /includes/homepage-promotion-panel.php - Closed <li>
+
+2013.02.11 - version 1.2.4
+ * includes/theme-woocommerce.php - added WooCommerce support flag
+
+2013.01.14 - version 1.2.3
+ * /includes/theme-actions.php - Remove unused CHILD_THEME_NAME and CHILD_THEME_URL constants.
+ * /includes/theme-functions.php - Make sure the homepage category exclusion happens only on the main query on the homepage, rather than all queries.
+ * /includes/theme-options.php - Remove duplicate homepage category exclusion theme option.
+ * /includes/homepage-blog-panel.php - Make sure the homepage category exclusion theme option is applied on the secondary blog panel as well as the main content panel.\
+ * /css/woocommerce.less,
+   /css/woocommerce.css - Added CSS classes for WooCommerce 2.0 compatibility.
+
+2012.12.21 - version 1.2.2
+ * includes/homepage-shop-panel.php
+   includes/general.js - homepage product loop now uses content-product.php
+
+2012.12.18 - version 1.2.1
+ * header.php - fix generator.php to load with child theme active.
+ * /includes/theme-actions.php - Briefly cater for the "The Events Calendar" plugin in the homepage content query filter.
+ * /css/layout.less,
+   /css/layout.css - Style the "comments off" text to have the same comment bubble as when comments are active.
+
+2012.12.06 - version 1.2
+* style.css
+  woocommerce.css - Styling preparation for WooCommerce 2.0
+* includes/theme-woocommerce.php - disable WooCommerce lightbox when prettyPhoto is enabled
+* includes/home-shop-panel - WC_Product class replaced with get_product.
+
+2012.12.02 - version 1.1.4
+ * index.php - Set the $is_paged variable.
+
+2012.11.07 - version 1.1.3
+ * style.less - Fixed searchbox styling for floated header, lowered z-index on thumbnail images.
+ * /css/generator.php - Fixed searchbox & mini cart styling for floated header
+ * /includes/js/general.js - Changed floated headers sub menus to stay open while hovered on the header.
+ * /includes/theme-actions.php - Moved the homepage "blog posts" query options to a query filter.
+ * /includes/homepage-promotion-panel.php - Replaced query_posts() with a new WP_Query().
+ * /includes/homepage-portfolio-panel.php - Replaced query_posts() with a new WP_Query().
+ * /includes/homepage-feedback-panel.php - Replaced query_posts() with a new WP_Query().
+ * /includes/homepage-features-panel.php - Replaced query_posts() with a new WP_Query().
+ * /includes/homepage-blog-panel.php - Replaced query_posts() with a new WP_Query().
+
+2012.11.05 - version 1.1.2
+ * includes/theme-woocommerce.php - fixed duplicate upsells bug
+ * css/woocommerce.css - fixed related products clearing issue
+
+2012.10.04 - version 1.1.1
+ * includes/homepage-slider-panel.php - Remove link to slide since slides are not public. Escaped attributes and URLs.
+ * includes/homepage-shop-panel.php - Product visibility options added to the query. Escaped attributes and URLs.
+
+2012.09.13 - version 1.1.0
+ * Native WooCommerce Support
+ * functions.php - load WooCommerce functions only if WooCommerce is active.
+ * /css/woocommerce.css - ADDED - WooCommerce styles.
+ * /css/woocommerce.less - ADDED - WooCommerce styles.
+ * /images/icons/* - ADDED - WooCommerce icons.
+ * /images/ajax-loader.gif - ADDED - WooCommerce AJAX loader graphic.
+ * /includes/theme-woocommerce.php - ADDED - WooCommerce-specific functions.
+ * /includes/sidebar-init.php - Move the registration of the "Homepage" widget area to be in last place. Fixes potential widget placement issue when switching from a theme that uses the "sidebar-1" naming convention.
+ * template-sitemap.php - modified with additional WooCommerce functionality
+
+2012.08.22 - version 1.0.15
+ * /includes/theme-options.php - Reorganized homepage-related options.
+
+2012.07.25 - version 1.0.14
+ * includes/theme-js.php - Fixed HTML5.js for IE8
+
+2012.07.16 - version 1.0.13
+ * style.css - Fixed delicious & linked in icon for Subscribe & Connect links.
+ * styles/*.css - Recompiled
+
+2012.07.03 - version 1.0.12
+ * style.css - Styling for Top Ad
+ * layout.css - Styling for Top Ad
+ * header.php - Support for the Top Ad setting
+ * includes/theme-options.php - Added note with top ad setting
+ * styles/*.css - Recompile
+
+2012.06.20 - version 1.0.11
+ * style.css - Fixed blog thumbnails z-index (post titles were overlapping and making them un-clickable)
+ * styles/*.css - Recompiled
+
+2012.06.14 - version 1.0.10
+ * style.css - Added "#tab-description" & ".woocommerce .summary" to .entry styles, to style typo elements on product listings.
+ * styles/* - Recompiled
+
+2012.06.13 - version 1.0.9
+ * style.css - fix for typo in homepage feedback panel link text
+
+2012.06.04 - version 1.0.8
+ * style.css - fix for social icons as linkedin/delicious were flip-flopped
+
+2012.05.20 - version 1.0.7
+ * includes/theme-js.php - Load masonry.js on 'portfolio-gallery' taxonomy archive page.
+
+2012.05.14 - version 1.0.6
+ * style.css - Removed styling for '.frill'; Fixed header perforated edge not working for alt styles in IE.
+ * css/layout.css - Fixed portfolio page margin
+ * header.php - Remove '.frill' div
+ * includes/theme-actions.php - Custom colors for WooCommerce buttons
+ * styles/*.css - Recompiled LESS
+ * content.php - fix for more tag on homepage
+ * includes/theme-options.php - fix for videos in lightbox gallery
+ * loop-portfolio.php - fix for exclude items
+
+2012.05.11 - version 1.0.5
+ * /includes/js/general.js - Add logic to add 'rel="lightbox"' to all links to images, if the "Enable Lightbox" option is enabled.
+ * /includes/theme-functions.php - Add logic to add CSS classes to the body tag if the "Enable Lightbox" option is enabled. Add action hook on woothemes_add_javascript and woothemes_add_css to load prettyPhoto conditionallty.
+ * /includes/theme-js.php - Removed redundant enqueue of 'jquery', and added woothemes_add_javascript action hook inside the woothemes_add_javascript() function.
+
+2012.05.07 - version 1.0.4
+ * css/layout.css - Added margin to portfolio items
+ * includes/js/general.js - moved masonry activation scripts to window.load, to avoid wrong heights
+
+2012.04.18 - version 1.0.3
+ * includes/js/general.js - Removed "imagesLoaded" function from Masonry activation scripts.
+
+2012.04.16 - version 1.0.2
+ * includes/homepage-portfolio-panel.php - Fixed link on homepage portfolio items
+ * header.php - generator.php now loaded using get_stylesheet_directory_uri() in preparation for WC child theme
+
+2012.04.13 - version 1.0.1
+ * css/mixins.less - Changed default Google font
+ * includes/theme-actions.php - Changed default Google Font; Added styling for "Header Active Nav Color" option
+ * includes/theme-options.php - Added option for "Header Active Nav Color"
+
+2012.04.12 - version 1.0
+ * First release!
